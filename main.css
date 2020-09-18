@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(135, 138, 141);
+  margin-bottom: 10px;
+  display: fixed;
+}
+.add-book {
+  font-size: 18px;
+  width: 100px;
+  height: 30px;
+  margin-top: 20px;
+}
+
+#book-container {
+  /* display: none; */
+  position: fixed;
+  background-color: rgb(212, 203, 191);
+  width: 200px;
+  height: 300px;
+  border: 1px solid black;
+}
+.btn-submit > * {
+  display: block;
+  margin: 5px;
+}
+
