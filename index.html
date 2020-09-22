@@ -7,36 +7,34 @@
   <title>Library</title>
 </head>
 <body>
-  <header>
-    <div class="nav-container">
-      <h1>My Library</h1>
-      <input type="button" class="add-book" value="add book">
-    </div>
-    <div class="myBook" id="book-container">
-      <form class="btn-submit" method="POST" action="post.js">
-        <label for="title"><b>title</b></label>
-        <input type="text" class="textarea" placeholder="book-title" required>
-        <label for="author"><b>author</b></label>
-        <input type="text" class="textarea" placeholder="author" id="author" required>
-        <label for="pages"><b>number of pages</b></label>
-        <input type="number" class="textarea" placeholder="pages" id="pages" required>
-
-        <label id="didRead"><b>completed?</b></label>
-
-        <div> 
-          <input type="checkbox" value="yes" name="didRead" id="yes" required>
-          <label for="yes"><b>yes</b></label>
-          <input type="checkbox" placeholder="no" name="didRead" id="no" required>
-          <label for="no"><b>no</b></label>
-        </div>
-        <input type="button" class="close" name="" id="done-button" value="done">
-      </form>
-    </div>
-  </header>
-  <div class="shelf">
-    <ul class="shelf-list">
-
-    </ul>
+  <div class="container">
+    <h1 class="ter">My Book List</h1>
+    <form id="book-form">
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" id="title" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="author">Author</label>
+        <input type="text" id="author" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="isbn">ISBN</label>
+        <input type="text" id="isbn" class="form-control">
+      </div>
+      <input type="submit" value="Add Book" class="sub">
+    </form>
+    <table class="tabl">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>ISBN</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="book-list"></tbody>
+    </table>
   </div>
   <script src="main.js"></script>
 </body>

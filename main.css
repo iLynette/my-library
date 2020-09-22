@@ -4,30 +4,47 @@
 body {
   height: 100%;
 }
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  background-color: rgb(135, 138, 141);
-  margin-bottom: 10px;
-  display: fixed;
+
+.ter {
+  background-color: rgb(106, 109, 109);
+  height: 70px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  padding-top: 15px;
 }
-.add-book {
-  font-size: 18px;
-  width: 100px;
-  height: 30px;
+form {
+  margin-left: 400px;
+}
+.form-group {
+  margin: 30px;
+  width: 50px;
+}
+.sub {
+  background-color: rgb(106, 109, 109);
+  width: 55%;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  outline: none;
+}
+.form-control {
+  height: 40px;
+  width: 450px;
+}
+.tabl {
+  margin: 0 auto;
+  width: 40%;
   margin-top: 20px;
+  cursor: pointer;
+  border: 1px solid lightslategray;
+  padding: 10px;
 }
 
-#book-container {
-  /* display: none; */
-  position: fixed;
-  background-color: rgb(212, 203, 191);
-  width: 200px;
-  height: 300px;
-  border: 1px solid black;
+.delete {
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+  cursor: pointer;
 }
-.btn-submit > * {
-  display: block;
-  margin: 5px;
-}
-
